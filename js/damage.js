@@ -1,0 +1,1 @@
+function damageBand(d){return d<45?'severe':d<80?'minor':'idle'}function applyImpact(state,severity='minor'){const loss=severity==='severe'?35:18;state.durability=clampStat(state.durability-loss);return damageBand(state.durability)}

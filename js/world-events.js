@@ -1,1 +1,0 @@
-(function(g){function getWorldEvent(s,rng=Math.random){const r=rng();if(r<.25)return{type:'marine',message:'🐢 海龜游進港灣，生態值 +2',eco:2};if(r<.45)return{type:'cleanup',message:'市民正在淨灘，海岸變乾淨了！',clean:8,eco:3};if(r<.62)return{type:'guard',message:'海巡署巡邏經過，向小波揮手。'};return{type:'calm',message:'海風平穩，港灣今天很舒服。'}}g.WBWorld={getWorldEvent}})(window);
