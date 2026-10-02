@@ -1,0 +1,1 @@
+const Environment={types:['晴天','陰天','雨天','強風','颱風'],set(type){const l=document.getElementById('weatherLayer');l.className='layer weather '+(type==='雨天'?'rain':type==='颱風'?'storm':'');game.state.weather=type;game.say('目前天氣：'+type);game.render()},next(){const i=(this.types.indexOf(game.state.weather||'晴天')+1)%this.types.length;this.set(this.types[i])}};

@@ -1,0 +1,1 @@
+const Evolution={evaluate(){const s=game.state;if(s.day>=7&&s.ecology>=5)return'生態守護型';if(s.day>=7&&s.durability>=90)return'重型防災型';if(s.day>=7&&Object.values(s.materials).reduce((a,b)=>a+b,0)>=8)return'工程耐久型';return'成長中的小波'}};

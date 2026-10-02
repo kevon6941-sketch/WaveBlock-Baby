@@ -1,0 +1,1 @@
+const MiniGames={crane(){Inventory.add('固定材料');game.state.happy=Math.min(100,game.state.happy+4);game.say('🏗️ 吊掛成功！獲得固定材料。')},dive(){game.state.ecology=(game.state.ecology||0)+1;game.say('🤿 清除海底廢棄物，生態值 +1。')},cleanup(){Inventory.add('回收物');game.state.clean=100;game.say('🧹 淨灘完成！海岸變乾淨了。')}};

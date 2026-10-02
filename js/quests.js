@@ -1,0 +1,1 @@
+const Quests={items:[['釣魚新手','完成一次釣魚'],['海岸守護','完成一次抗浪'],['修補職人','修補受損的小波'],['生態朋友','遇見海龜']],html(){return this.items.map((q,i)=>`<p>${game.state.quests?.[i]?'✅':'⬜'} <b>${q[0]}</b>－${q[1]}</p>`).join('')},done(i){game.state.quests??={};game.state.quests[i]=true;document.getElementById('missionPanel').textContent='任務進度 '+Object.keys(game.state.quests).length+'/4'}};

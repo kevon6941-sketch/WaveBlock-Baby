@@ -1,0 +1,1 @@
+const Inventory={add(k,n=1){game.state.materials[k]=(game.state.materials[k]||0)+n;game.render()},list(){return Object.entries(game.state.materials).map(([k,v])=>`<p><b>${k}</b> × ${v}</p>`).join('')||'<p>背包是空的</p>'}};
