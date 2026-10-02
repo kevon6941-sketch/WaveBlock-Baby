@@ -1,0 +1,26 @@
+{
+  "name": "消波塊寶寶 WaveBlock Baby",
+  "short_name": "消波塊寶寶",
+  "description": "電子雞養成 × 海岸世界 PWA",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e8fbff",
+  "theme_color": "#27b8d5",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

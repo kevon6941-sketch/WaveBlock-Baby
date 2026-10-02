@@ -1,0 +1,3 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import fs from 'node:fs';
+const root=new URL('../',import.meta.url); const read=p=>fs.readFileSync(new URL(p,root),'utf8');
+test('mobile controls use only A B C buttons and no joystick',()=>{const h=read('index.html'),c=read('css/v32.css'),p=read('js/player.js'); assert.doesNotMatch(h,/id="joystick"/); for(const x of ['controlA','controlB','controlC']) assert.ok(h.includes(`id="${x}"`),x); assert.match(h,/A<small>選擇<\/small>/); assert.match(h,/B<small>確定<\/small>/); assert.match(h,/C<small>返回<\/small>/); assert.match(c,/\.abcControls/); assert.doesNotMatch(p,/getElementById\('joystick'\)/);});

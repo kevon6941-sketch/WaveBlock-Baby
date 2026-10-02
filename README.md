@@ -1,5 +1,18 @@
-# WaveBlock Baby v3.2 Complete World
-手機優先的 2.5D 海港養成冒險。包含可移動小波、虛擬搖桿、NPC/區域互動、日夜、天氣、釣魚、抗浪、修補、吊車、潛水、材料背包、任務、生態值與分支進化基礎。
+# WaveBlock Baby v3.3 PWA
+
+《消波塊寶寶》電子雞養成 × 海岸世界 PWA，保留 v3.2 A／B／C 三按鈕操作。
 
 ## GitHub Pages
-將此資料夾內所有檔案放在 repository 的 main 分支根目錄，Pages 設定 Deploy from a branch → main → /(root)。
+把本資料夾「內容」放到 repository 的 `main` 分支根目錄，GitHub Pages 選 `Deploy from a branch` → `main` → `/(root)`。
+
+## iPhone 安裝
+使用 Safari 開啟 GitHub Pages 網址 → 分享 → 加入主畫面。PWA 會以 standalone 模式啟動。
+
+## v3.3 新增
+- Web App Manifest
+- iPhone / PWA App icons
+- Service Worker
+- App shell 離線快取
+- 離線 fallback 畫面
+- 自動清理舊版快取
+- 保留既有 localStorage 遊戲存檔
